@@ -1,4 +1,11 @@
 @charset "UTF-8";
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/vendor\/neat\/grid\/_grid\.scss}line{font-family:\000032}}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 /* Squarespace LESS Compiler  (less.js language v1.3.3)  */
 /*! normalize.css v2.0.1 | MIT License | git.io/normalize */
 /* ==========================================================================
@@ -17040,21 +17047,6 @@ body:not(.header-icons) #info span {
   font-style: normal;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/vendor\/_squarespace\.scss}line{font-family:\000039862}}
-.footer-nav .nav a {
-  font-family: "Proxima Nova", sans-serif;
-  font-size: 12px;
-  font-family: "proxima-nova";
-  font-size: 14px;
-  line-height: 1em;
-  text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: 1px;
-  text-align: center;
-  font-weight: 600;
-  font-style: normal;
-}
-
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/vendor\/_squarespace\.scss}line{font-family:\000039875}}
 .main-nav ul,
 .secondary-nav ul,
@@ -20664,72 +20656,378 @@ body:not(.header--nav-borders) #folderNav + #categoryNav {
   font-style: normal;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\000031}}
-.main-image-wrapper {
-  position: relative;
+/*
+ * 	portBox 1.0 - jQuery plugin
+ *	written by Joey Navarro	
+ *	http://www.joeynavarro.com
+ *
+ *	Copyright (c) 2013 Joey Navarro (http://www.joeynavarro.com)
+ *	Dual licensed under the MIT (MIT-LICENSE.txt)
+ *	and GPL (GPL-LICENSE.txt) licenses.
+ *
+ *	Built for jQuery library
+ *	http://jquery.com
+ *
+ */
+/*-----------------------------------------
+portBox CSS
+------------------------------------------*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/vendor\/_portbox\.scss}line{font-family:\0000317}}
+.portBox-overlay {
+  height: 100%;
+  width: 100%;
+  background: #000000;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\000036}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/vendor\/_portbox\.scss}line{font-family:\0000330}}
+.portBox {
+  max-width: 1280px;
+  position: absolute;
+  display: none;
+  background: #ffffff;
+  z-index: 1001;
+  padding: 30px;
+  text-align: left;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 10px;
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  -box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  min-width: 200px;
+  font-family: 'Source Sans Pro', sans-serif;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/vendor\/_portbox\.scss}line{font-family:\0000351}}
+.close-portBox {
+  font-size: 20px;
+  line-height: .5;
+  position: absolute;
+  top: -6px;
+  right: -7px;
+  color: #fff !important;
+  text-shadow: none;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 5px;
+  background-color: #5c5c5c;
+  overflow: visible;
+  border: 2px solid #fff;
+  text-decoration: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/vendor\/_portbox\.scss}line{font-family:\0000370}}
+.close-portBox:hover {
+  color: #5c5c5c !important;
+  background-color: #fff;
+  border: 2px solid #5c5c5c;
+}
+
+/*----------------------------------------
+porBox Content CSS
+-----------------------------------------*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/vendor\/_portbox\.scss}line{font-family:\0000380}}
+.project-pics {
+  width: 70%;
+  float: left;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/vendor\/_portbox\.scss}line{font-family:\0000385}}
+.project-pics img {
+  width: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/vendor\/_portbox\.scss}line{font-family:\0000389}}
+.project-info {
+  float: left;
+  width: 30%;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  padding: 0 0 0 40px;
+  line-height: 28px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/vendor\/_portbox\.scss}line{font-family:\0000399}}
+.project-info h3,
+.project-info h4,
+.project-info ul,
+.project-info p,
+.project-button {
+  margin: 10px 0;
+  float: left;
+  width: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/vendor\/_portbox\.scss}line{font-family:\00003109}}
+.project-info h3 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #030303;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/vendor\/_portbox\.scss}line{font-family:\00003115}}
+.project-info p {
+  font-size: 16px;
+  color: #030303;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/vendor\/_portbox\.scss}line{font-family:\00003120}}
+.project-info h4 {
+  font-size: 18px;
+  color: #bfbfbf;
+  border-bottom: 1px solid #e3e3e3;
+  margin-top: 20px;
+  letter-spacing: 2px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/vendor\/_portbox\.scss}line{font-family:\00003128}}
+.project-info ul {
+  list-style: none;
+  padding: 0;
+  color: #000;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/vendor\/_portbox\.scss}line{font-family:\00003134}}
+.project-info ul li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/vendor\/_portbox\.scss}line{font-family:\00003139}}
+.project-button {
+  line-height: 45px;
+  height: 45px;
+  border-radius: 3px;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #99cd4e;
+  text-align: center;
+  margin-top: 15px;
+  letter-spacing: 2px;
+  border: 1px solid #bbb;
+  -webkit-transition: all .15s linear;
+  -moz-transition: all .15s linear;
+  transition: all .15s linear;
+  text-shadow: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/vendor\/_portbox\.scss}line{font-family:\00003156}}
+.project-button:hover {
+  background: #d0d0d0;
+  color: #fff !important;
+  -webkit-box-shadow: inset 0 0 1px 1px #eaeaea;
+  box-shadow: inset 0 0 1px 1px #eaeaea;
+  cursor: pointer;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/vendor\/_portbox\.scss}line{font-family:\00003164}}
+.project-button:active {
+  background-color: #e3e3e3;
+  color: #bfbfbf !important;
+  -webkit-box-shadow: inset 0 0 1px 1px #e3e3e3;
+  box-shadow: inset 0 0 1px 1px #e3e3e3;
+}
+
+@media only screen and (max-width: 1024px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/vendor\/_portbox\.scss}line{font-family:\00003173}}
+  .project-pics {
+    width: 100%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/vendor\/_portbox\.scss}line{font-family:\00003177}}
+  .project-info {
+    width: 100%;
+    padding: 0;
+    margin-top: 40px;
+  }
+}
+@media only screen and (max-width: 420px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/vendor\/_portbox\.scss}line{font-family:\00003186}}
+  .project-info {
+    text-align: center;
+    margin-top: 0;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/vendor\/_portbox\.scss}line{font-family:\00003191}}
+  .project-info h3 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/libraries\/_dropdown\.scss}line{font-family:\000039}}
+.popup {
+  opacity: 0;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+  -webkit-transform-origin: center center;
+  -moz-transform-origin: center center;
+  -ms-transform-origin: center center;
+  -o-transform-origin: center center;
+  transform-origin: center center;
+  position: absolute;
+  padding: 10px 0;
+  min-width: 180px;
+  background-color: #f4f4f4;
+  background-image: -webkit-linear-gradient(top, #f4f4f4, #d6d6d6);
+  background-image: linear-gradient(to bottom,#f4f4f4, #d6d6d6);
+  border-radius: 10px;
+  box-shadow: 0 2px 18px rgba(0, 0, 0, 0.6);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/libraries\/_dropdown\.scss}line{font-family:\0000335}}
+.popup.open {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  z-index: 5;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/libraries\/_popup\.scss}line{font-family:\000031}}
+.popup {
+  -webkit-transform-origin: 20px top;
+  -moz-transform-origin: 20px top;
+  -ms-transform-origin: 20px top;
+  -o-transform-origin: 20px top;
+  transform-origin: 20px top;
+  padding: 20px;
+  width: 50%;
+  height: 50%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/libraries\/_popup\.scss}line{font-family:\000038}}
+.popup.open {
+  z-index: 5;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\0000314}}
+.footer-nav nav a, body .outer-wrapper .locations
+ul li, .resources h3, #link-back {
+  font-family: "proxima nova", helvetica, sans-serif;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\0000318}}
+.footer-nav nav a, body .outer-wrapper .locations
+ul li {
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\0000327}}
+body {
+  position: relative;
+  font-family: "ff-tisa-web-pro", georgia, serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\0000330}}
+body.popup-open {
+  overflow: hidden;
+  margin-left: -15px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\0000336}}
+.main-image-wrapper {
+  position: relative;
+  height: 500px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\0000341}}
+.content-fill img {
+  width: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\0000345}}
+#header {
+  z-index: 2;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\0000350}}
 #secondary-navigation ul, #color-banner ul {
   display: table;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\000038}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\0000352}}
 #secondary-navigation ul li, #color-banner ul li {
   width: 20%;
   display: table-cell;
   position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\0000312}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\0000356}}
 #secondary-navigation ul li:nth-child(1), #color-banner ul li:nth-child(1) {
-  background-color: #9f783f;
+  background-color: #3e462f;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\0000314}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\0000358}}
 #secondary-navigation ul li:nth-child(1).active-link a:after, #color-banner ul li:nth-child(1).active-link a:after {
   opacity: 1;
-  border-bottom-color: #9f783f;
+  border-bottom-color: #3e462f;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\0000319}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\0000363}}
 #secondary-navigation ul li:nth-child(2), #color-banner ul li:nth-child(2) {
-  background-color: #6f90b1;
+  background-color: #3a98ce;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\0000321}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\0000365}}
 #secondary-navigation ul li:nth-child(2).active-link a:after, #color-banner ul li:nth-child(2).active-link a:after {
   opacity: 1;
-  border-bottom-color: #6f90b1;
+  border-bottom-color: #3a98ce;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\0000326}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\0000370}}
 #secondary-navigation ul li:nth-child(3), #color-banner ul li:nth-child(3) {
-  background-color: #875b40;
+  background-color: #62473c;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\0000328}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\0000372}}
 #secondary-navigation ul li:nth-child(3).active-link a:after, #color-banner ul li:nth-child(3).active-link a:after {
   opacity: 1;
-  border-bottom-color: #875b40;
+  border-bottom-color: #62473c;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\0000333}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\0000377}}
 #secondary-navigation ul li:nth-child(4), #color-banner ul li:nth-child(4) {
-  background-color: #c65700;
+  background-color: #c58c00;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\0000335}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\0000379}}
 #secondary-navigation ul li:nth-child(4).active-link a:after, #color-banner ul li:nth-child(4).active-link a:after {
   opacity: 1;
-  border-bottom-color: #c65700;
+  border-bottom-color: #c58c00;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\0000340}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\0000384}}
 #secondary-navigation ul li:nth-child(5), #color-banner ul li:nth-child(5) {
-  background-color: #585f01;
+  background-color: #687519;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\0000342}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\0000386}}
 #secondary-navigation ul li:nth-child(5).active-link a:after, #color-banner ul li:nth-child(5).active-link a:after {
   opacity: 1;
-  border-bottom-color: #585f01;
+  border-bottom-color: #687519;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\0000347}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\0000391}}
 #secondary-navigation ul li a, #color-banner ul li a {
   padding: 1em 1.25em;
   color: white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\0000350}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\0000394}}
 #secondary-navigation ul li a:after, #color-banner ul li a:after {
   content: " ";
   position: absolute;
@@ -20748,36 +21046,41 @@ body:not(.header--nav-borders) #folderNav + #categoryNav {
   letter-spacing: 2px;
   opacity: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\0000369}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003113}}
 #secondary-navigation ul li.active-link a:after, #color-banner ul li.active-link a:after {
   opacity: 1;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\0000378}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003120}}
+.footer-nav {
+  z-index: 2;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003126}}
 #color-banner ul {
   padding: 0;
   margin: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\0000382}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003130}}
 #color-banner li {
   height: 10px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\0000384}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003132}}
 #color-banner li a {
   display: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\0000390}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003138}}
 section.one-column, section.two-column {
   display: table;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\0000392}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003140}}
 section.one-column article, section.two-column article {
   display: table-cell;
   width: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003100}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003148}}
 .for-explorers article,
 .for-strategic article {
   font-size: 24px;
@@ -20785,51 +21088,51 @@ section.one-column article, section.two-column article {
   line-height: 1.6;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003109}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003157}}
 section.two-column article {
   width: 50%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003111}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003159}}
 section.two-column article blockquote {
   font-size: 28px;
   padding: 1em 2em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003114}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003162}}
 section.two-column article blockquote p {
   margin: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003117}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003165}}
 section.two-column article blockquote + p {
   padding-left: 35%;
   text-indent: -1.2em;
   font-style: italic;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003126}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003174}}
 .team-members-wrapper {
   background-color: #eee;
   padding: 1em 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003131}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003179}}
 article {
   padding: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003135}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003183}}
 .member-pic div {
   background-size: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003139}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003187}}
 .page-title {
   margin: 200px 0 0 0;
-  padding: 1em 0;
+  padding: 1em 2em;
   text-align: center;
   font-size: 32px;
   font-family: "ff-tisa-web-pro";
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003146}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003194}}
 .page-title span:before, .page-title span:after {
   content: " ";
   display: block;
@@ -20839,39 +21142,51 @@ article {
   border-bottom: none;
   margin: 0 auto;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003155}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003203}}
 .page-title span:after {
   border-top: none;
   height: 0.25em;
   border-bottom: 1px solid black;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003163}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003212}}
+.resources .page-title {
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003215}}
+.resources h3 {
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 22px;
+  text-align: center;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003224}}
 .testimonials {
   margin-top: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003165}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003226}}
 .testimonials blockquote {
   font-size: 24px;
   padding: 1em 4em 0em 4em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003168}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003229}}
 .testimonials blockquote p {
   margin-top: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003171}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003232}}
 .testimonials blockquote + p {
   padding-left: 35%;
   text-indent: -1.2em;
   font-style: italic;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003179}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003240}}
 .team {
   margin-top: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003185}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003246}}
 .team-members-wrapper .role,
 .team-members-container .role {
   text-align: center;
@@ -20880,21 +21195,26 @@ article {
   font-weight: bold;
   margin: 0 0 1em 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003192}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003252}}
+.team-members-wrapper .role.partners,
+.team-members-container .role.partners {
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003256}}
 .team-members-wrapper .team-members,
 .team-members-container .team-members {
   padding: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003194}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003258}}
 .team-members-wrapper .team-members .team-member,
 .team-members-container .team-members .team-member {
   display: inline;
   width: 24%;
   float: left;
   padding: 0 .25em;
-  min-height: 10em;
+  min-height: 8.5em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003200}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003264}}
 .team-members-wrapper .team-members .team-member .member-name,
 .team-members-container .team-members .team-member .member-name {
   font-family: "Proxima Nova", sans-serif;
@@ -20903,8 +21223,9 @@ article {
   font-weight: 400;
   font-style: normal;
   text-align: center;
+  margin-top: 1.25em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003208}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003273}}
 .team-members-wrapper .team-members .team-member .member-bio,
 .team-members-container .team-members .team-member .member-bio {
   text-align: center;
@@ -20912,7 +21233,7 @@ article {
   font-size: 15px;
   line-height: 1.5;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003214}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003279}}
 .team-members-wrapper .team-members .team-member .member-pic div,
 .team-members-container .team-members .team-member .member-pic div {
   margin: 0 auto;
@@ -20923,32 +21244,87 @@ article {
   height: 108px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003226}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003291}}
 .team-row {
   position: relative;
   float: right;
   right: 50%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003230}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003295}}
 .team-row .team-members {
   position: relative;
   float: right;
   right: -50%;
   margin: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003235}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003300}}
 .team-row .team-members .team-member {
   width: 190px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003241}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003306}}
 .privacy-policy {
-  margin: 1em 4em;
+  margin: 1em 4em 4em 4em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003245}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003310}}
 footer {
   margin-bottom: 4em;
   text-align: center;
-  font-size: 12px;
+  font-size: 16px;
+  padding: 1em 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003317}}
+.footer-nav nav a {
+  line-height: 1em;
+  text-decoration: none;
+  font-size: 23px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003324}}
+.member-detail p {
+  margin-bottom: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003326}}
+.member-detail p:first-child {
+  margin-top: 0;
+  margin-bottom: inherit;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003332}}
+body .outer-wrapper .locations
+ul {
+  display: table;
+  margin: 0 0 0 4em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003336}}
+body .outer-wrapper .locations
+ul li {
+  font-size: 18px;
+  font-weight: 400;
+  display: table-cell;
+  padding: 1em 2em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003360}}
+.link-back-container {
+  text-align: center;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003364}}
+#link-back {
+  padding: 0.25em 1.5em 0.25em 1.5em;
+  border-radius: 1em;
+  background-color: #aaaaaa;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 2px;
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003355}}
+#link-back:hover {
+  background-color: #777777;
 }
