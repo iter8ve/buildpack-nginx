@@ -20933,13 +20933,13 @@ porBox Content CSS
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\0000336}}
-.footer-nav nav a, body .outer-wrapper .locations
+.footer-nav nav ul li a, body .outer-wrapper .locations
 ul li, .resources h3, #link-back {
   font-family: "proxima nova", helvetica, sans-serif;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\0000340}}
-.footer-nav nav a, body .outer-wrapper .locations
+.footer-nav nav ul li a, body .outer-wrapper .locations
 ul li {
   font-weight: 600;
   letter-spacing: 1px;
@@ -21294,6 +21294,16 @@ article {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003344}}
+.contact-us {
+  padding-top: 0;
+  padding-bottom: 0.5em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003347}}
+.contact-us p {
+  text-align: center;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003352}}
 footer {
   margin-bottom: 4em;
   text-align: center;
@@ -21301,44 +21311,46 @@ footer {
   padding: 1em 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003351}}
-.footer-nav nav a {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003359}}
+.footer-nav nav ul li a {
   line-height: 1em;
   text-decoration: none;
-  font-size: 23px;
+  font-size: 22px;
+  font-weight: 700;
+  padding: 1.25em 1.25em 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003358}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003368}}
 .member-detail p {
   margin-bottom: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003360}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003370}}
 .member-detail p:first-child {
   margin-top: 0;
   margin-bottom: inherit;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003366}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003376}}
 body .outer-wrapper .locations
 ul {
   display: table;
-  margin: 0 0 0 4em;
+  margin: 0 0 0 5.25em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003370}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003380}}
 body .outer-wrapper .locations
 ul li {
   font-size: 18px;
   font-weight: 400;
   display: table-cell;
-  padding: 1em 2em;
+  padding: 1em 1.75em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003394}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003404}}
 .link-back-container {
   text-align: center;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003398}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003408}}
 #link-back {
   padding: 0.25em 1.5em 0.25em 1.5em;
   border-radius: 1em;
@@ -21350,12 +21362,12 @@ ul li {
   letter-spacing: 2px;
   position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003389}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003399}}
 #link-back:hover {
   background-color: #777777;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003408}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003418}}
 #splash {
   position: absolute;
   width: 100%;
@@ -21363,7 +21375,7 @@ ul li {
   background-color: #4b1e3d;
   color: white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003417}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003427}}
 #splash #header {
   position: relative;
   width: 100%;
@@ -21371,11 +21383,11 @@ ul li {
   text-align: center;
   border-bottom: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003423}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003433}}
 #splash #header h1 {
   color: white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003426}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/msb\/dev\/aspen\/assets\/stylesheets\/includes\/_base\.scss}line{font-family:\00003436}}
 #splash #header img {
   width: 150px;
 }
